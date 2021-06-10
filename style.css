@@ -7,10 +7,12 @@ form > label {
 
 input {
 	margin-bottom: 20px;
+  border: 2px solid blue;
 
 }
 
 body {
+  box-sizing: border-box;
 	text-align: center;
 	background-image: url(./dog.jpg);
 	background-repeat: no-repeat;
@@ -29,13 +31,13 @@ form {
 	background:linear-gradient(#ff8a00, #e52e71);
 	padding: 4px;
 	width: 180px;
+  height: 30px;
 	padding-top: 10px;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 18px;
   margin-left: auto;
   margin-right: auto;
-  height: 30px;
  border-radius: 10px;
  border:2px solid black
 }
@@ -46,32 +48,43 @@ form button {
 	font-size: large;
 	padding: 10px;
 background-color: skyblue;
-border:2px solid black;
+border: 2px solid rgb(149, 131, 131);
   border-radius: 10px;
 }
 
 ul {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 800px;
 	list-style-type: none;
 	line-height: 30px;
-  background:rgb(239, 251, 214) 
+  background: ghostwhite
   ;
+  
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3px;
-  width: 500px
+  padding: 10px;
+  width:fit-content;
+  padding-right: 5px; 
+  text-align: left;
+
 }
 
 .remove-button {
-  font-size: large;
-	padding: 10px;
+display:flex;
+margin-left: 10px ;
+float: right;
+ 
+	 padding: 3px;
 background-color: skyblue;
-border:2px solid black;
-  border-radius: 10px;
+border: 2px solid rgb(102, 95, 79);
+  border-radius: 5px;
   margin-bottom: 5px;
-  margin-left: 5px;
+  
 }
 h2{
-  color: rgb(239, 251, 214) ;
+  color: ghostwhite
 }
 label{
   color:rgb(239, 251, 214) ;

@@ -23,7 +23,6 @@ function onSubmitDog (event) {
   let breed = breedInput.value
   let age = ageInput.value
   let likesTreats = treatsCheckbox.checked
-  console.log(likesTreats)
 
   if (name === '' || breed === '' || age === '') {
     // If any of these text boxes are empty...
@@ -42,9 +41,9 @@ function onSubmitDog (event) {
      age,
    likesTreats
   }
-  // worked  with Michael Meacham (Facilitator). learned some cool stuff from him. really appreciated.
-  console.log(dog)
   dataModel.push(dog)
+  // worked  with Michael Meacham (Facilitator). learned some cool stuff from him. really appreciated.
+
 
   renderDogList()
 
@@ -88,23 +87,23 @@ function renderDogList () {
     }
 
     
+    // STEP THREE - Render the dog list from scratch. See "Step Three"
+    // instructions.
+    // If there are no dogs, then render "No Dogs!" Otherwise, render all
+    // of the dogs in your data model.
+    // Remember to copy the "Send Home" button code into your loop. This
+    // code is in the instructions.
+    //Code here.
     
     if (dataModel[index].likesTreats === true) {
-      li.innerHTML = `${dataModel[index].name}! A ${dataModel[index].age} year old, which likes treats  `
+      li.innerHTML = `${dataModel[index].name}! A ${dataModel[index].age} year old ${dataModel[index].breed}, which likes treats  `
       li.appendChild(sendHomeButton), list.append(li)
     } else {
-      li.innerHTML = `${dataModel[index].name}! A ${dataModel[index].age} year old, which may not like treates`
+      li.innerHTML = `${dataModel[index].name}! A ${dataModel[index].age} year old ${dataModel[index].breed}, which may not like treates`
       li.appendChild(sendHomeButton), list.append(li)
     }
   }
 
-  // STEP THREE - Render the dog list from scratch. See "Step Three"
-  // instructions.
-  // If there are no dogs, then render "No Dogs!" Otherwise, render all
-  // of the dogs in your data model.
-  // Remember to copy the "Send Home" button code into your loop. This
-  // code is in the instructions.
-  // YOUR CODE HERE
 }
 
 // The function below is already completed for you. It removes a given
