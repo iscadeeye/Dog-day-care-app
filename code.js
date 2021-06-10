@@ -81,6 +81,7 @@ function renderDogList () {
     let li = document.createElement('li')
     let sendHomeButton = document.createElement('button')
     sendHomeButton.innerText = 'Send home'
+    sendHomeButton.classList = "remove-button"
 
     sendHomeButton.onclick = function () {
       removeDog(dog)

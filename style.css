@@ -1,40 +1,78 @@
-
 form > input,
 form > label {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
+  
 }
 
 input {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
+
 }
 
 body {
-  text-align: center;
+	text-align: center;
+	background-image: url(./dog.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 form {
-  text-align: left;
-  width: 300px;
-  margin: auto;
+	text-align: left;
+	width: 300px;
+	margin: auto;
 }
 
 .checkbox-section {
-  text-align: center;
+	text-align: center;
+	background:linear-gradient(#ff8a00, #e52e71);
+	padding: 4px;
+	width: 180px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+ border-radius: 10px;
+ border:2px solid black
 }
 
 form button {
-  display: block;
-  margin: auto;
+	display: block;
+	margin: auto;
+	font-size: large;
+	padding: 10px;
+background-color: skyblue;
+border:2px solid black;
+  border-radius: 10px;
 }
 
 ul {
-  list-style-type: none;
-  line-height: 30px;
+	list-style-type: none;
+	line-height: 30px;
+  background:rgb(239, 251, 214) 
+  ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3px;
+  width: 500px
 }
 
 .remove-button {
-  color: red;
-  margin-left: 10px;
-
+  font-size: large;
+	padding: 10px;
+background-color: skyblue;
+border:2px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+h2{
+  color: rgb(239, 251, 214) ;
+}
+label{
+  color:rgb(239, 251, 214) ;
 }
