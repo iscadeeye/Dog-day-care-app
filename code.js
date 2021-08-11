@@ -36,14 +36,13 @@ function onSubmitDog (event) {
   // YOUR CODE HERE
 
   let dog = {
-     name,
+    name,
     breed,
-     age,
-   likesTreats
+    age,
+    likesTreats
   }
   dataModel.push(dog)
   // worked  with Michael Meacham (Facilitator). learned some cool stuff from him. really appreciated.
-
 
   renderDogList()
 
@@ -62,38 +61,32 @@ function onSubmitDog (event) {
 // sees on the page in sync with the data model containing all of our
 // dog objects.
 
-
-
-
 function renderDogList () {
   let list = document.querySelector('#dog_list')
   list.innerHTML = '' // First, CLEAR the whole list.
 
-  if(dataModel.length === 0 ){
-    let li = document.createElement("li")
-    li.innerHTML = "No Dogs!"
+  if (dataModel.length === 0) {
+    let li = document.createElement('li')
+    li.innerHTML = 'No Dogs!'
     list.append(li)
-    return
+    
+    return //exit the function early
   }
   for (let index = 0; index < dataModel.length; index += 1) {
     let dog = dataModel[index]
     let li = document.createElement('li')
     let sendHomeButton = document.createElement('button')
     sendHomeButton.innerText = 'Send home'
-    sendHomeButton.classList = "remove-button"
+    sendHomeButton.classList = 'remove-button'
 
     sendHomeButton.onclick = function () {
       removeDog(dog)
     }
 
-    
     // STEP THREE - Render the dog list from scratch. See "Step Three"
     // instructions.
     // If there are no dogs, then render "No Dogs!" Otherwise, render all
     // of the dogs in your data model.
-    // Remember to copy the "Send Home" button code into your loop. This
-    // code is in the instructions.
-    //Code here.
     
     if (dataModel[index].likesTreats === true) {
       li.innerHTML = `${dataModel[index].name}! A ${dataModel[index].age} year old ${dataModel[index].breed}, which likes treats  `
@@ -103,20 +96,16 @@ function renderDogList () {
       li.appendChild(sendHomeButton), list.append(li)
     }
   }
-
 }
 
-// The function below is already completed for you. It removes a given
-// dog from the data model. It finds the index of the dog, and then uses
-// that index to splice (cut) it out of the array. Then it re-renders
-// the dog list, so that it no longer displays on the page.
+//send home function
 function removeDog (dog) {
   let dogIndex = dataModel.indexOf(dog)
   dataModel.splice(dogIndex, 1)
   renderDogList()
 }
 
-// We need to tell the Submit button on the page what to do:
+
 // Run the onSubmitDog function when the button is clicked.
 let button = document.querySelector('#submit_button')
 button.addEventListener('click', onSubmitDog)

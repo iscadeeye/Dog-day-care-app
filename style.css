@@ -1,18 +1,16 @@
-form > input,
-form > label {
+form>input,
+form>label {
 	display: block;
 	width: 100%;
-  
 }
 
 input {
 	margin-bottom: 20px;
-  border: 2px solid blue;
-
+	border: 2px solid blue;
 }
 
 body {
-  box-sizing: border-box;
+	box-sizing: border-box;
 	text-align: center;
 	background-image: url(./dog.jpg);
 	background-repeat: no-repeat;
@@ -28,18 +26,18 @@ form {
 
 .checkbox-section {
 	text-align: center;
-	background:linear-gradient(#ff8a00, #e52e71);
+	background: linear-gradient(#ff8a00, #e52e71);
 	padding: 4px;
 	width: 180px;
-  height: 30px;
+	height: 30px;
 	padding-top: 10px;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 18px;
-  margin-left: auto;
-  margin-right: auto;
- border-radius: 10px;
- border:2px solid black
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	border: 2px solid black
 }
 
 form button {
@@ -47,45 +45,43 @@ form button {
 	margin: auto;
 	font-size: large;
 	padding: 10px;
-background-color: skyblue;
-border: 2px solid rgb(149, 131, 131);
-  border-radius: 10px;
+	background-color: skyblue;
+	border: 2px solid rgb(149, 131, 131);
+	border-radius: 10px;
 }
 
 ul {
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 800px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 800px;
 	list-style-type: none;
 	line-height: 30px;
-  background: ghostwhite
-  ;
-  
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  width:fit-content;
-  padding-right: 5px; 
-  text-align: left;
+	background: ghostwhite;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: fit-content;
+	padding-right: 5px;
+	text-align: left;
 
 }
 
 .remove-button {
-display:flex;
-margin-left: 10px ;
-float: right;
- 
-	 padding: 3px;
-background-color: skyblue;
-border: 2px solid rgb(102, 95, 79);
-  border-radius: 5px;
-  margin-bottom: 5px;
-  
+	margin-left: 10px;
+	float: right;
+	padding: 3px;
+	background-color: skyblue;
+	border: 2px solid rgb(102, 95, 79);
+	border-radius: 5px;
+	margin-bottom: 5px;
+
 }
-h2{
-  color: ghostwhite
+
+h2 {
+	color: ghostwhite
 }
-label{
-  color:rgb(239, 251, 214) ;
+
+label {
+	color: rgb(239, 251, 214);
 }
